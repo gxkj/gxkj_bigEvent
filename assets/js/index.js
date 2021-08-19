@@ -39,11 +39,11 @@ function getUserInfo() {
         $('#welcom').html('欢迎&nbsp;&nbsp;' + name);
         // 渲染用户头像
         if (user.user_pic !== null) {
-            $('.layui-nav-img').attr('src', user.user.user_pic).show();
+            $('.layui-nav-img').attr('src', user.user_pic).show();
             $('.text-avater').hide();
         } else {
             $('.layui-nav-img').hide();
-            var first = user.username[0].toUpperCase();
+            var first = name[0].toUpperCase();
             $('.text-avater').html(first).show();
         }
     }

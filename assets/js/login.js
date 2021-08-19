@@ -69,7 +69,7 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-                    return layer.msg(res.message);
+                    return layer.msg('账号或密码错误！请重试');
                 }
                 layer.msg('登录成功');
                 // console.log(res.token);
